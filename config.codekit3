@@ -9,19 +9,6 @@
   ],
   "creatorBuild" : "34335",
   "files" : {
-    "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg" : {
-      "ft" : 16384,
-      "iS" : 833978,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/daniel-leone-g30P1zcOzXo-unsplash.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -33,19 +20,6 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/deploy\/img\/hero.jpg" : {
-      "ft" : 16384,
-      "iS" : 98619,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/hero.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -65,14 +39,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/dev\/content\/hero.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/hero.html",
-      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -115,7 +81,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -315,11 +281,10 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "Motion-F22-PM",
+    "displayValue" : "Motion",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
-    "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 686163571.83469796
+    "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
