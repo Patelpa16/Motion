@@ -436,11 +436,6 @@ textarea {
 
 @media screen and (min-width: 1024px) {
   #portrait {
-    margin-left: 300px !important;
-  }
-}
-@media screen and (max-width: 200px) {
-  .h1 {
-    font-size: 1.25rem !important;
+    margin-left: 350px !important;
   }
 }
