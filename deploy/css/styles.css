@@ -433,3 +433,14 @@ textarea {
   height: 20vh;
   padding-left: 50px;
 }
+
+@media screen and (min-width: 1024px) {
+  #portrait {
+    margin-left: 300px !important;
+  }
+}
+@media screen and (max-width: 200px) {
+  .h1 {
+    font-size: 1.25rem !important;
+  }
+}
