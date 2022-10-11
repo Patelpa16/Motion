@@ -14,9 +14,12 @@ function heroAnimation(){
     var tl = gsap.timeline();
 
 
-    tl.from("#line-1",{duration: 1, alpha:0, y:-100})
+    tl.from("#line-1",{duration:1,x:-200,alpha:0})
+     .from("#portrait",{duration:.5,x: +200,alpha:0})
         .from("#line-2",{duration: 1, alpha:0, y:-70})
         .from("#resumebutton",{duration: 1, alpha:0, y:200})
+       
+        
     return tl;
 }
 
@@ -25,7 +28,7 @@ var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
 
 
-var heroSizeNumber = 1;
+var heroSizeNumber = 4;
 
 let mm = gsap.matchMedia();
 
@@ -39,11 +42,11 @@ mm.add("(max-width: 767px)", () => {
   heroSizeNumber = 1.25;
 });
 
-let trailBtn = document.querySelector("#trails-btn");
+let trailBtn = document.querySelector("#resumebutton");
 
 var buttonAnimation = gsap.timeline({paused:true});
-buttonAnimation.to("#trails-btn",{duration:0.25, scale:heroSizeNumber},"goAway")
-        .to("#resumebutton",{duration: 0.25, rotateY:180})
+buttonAnimation.to("#resumebutton",{duration:0.25, scale:heroSizeNumber},"goAway")
+        .to("#resumebutton",{duration: 0.2})
         .to("#line-1",{duration: 0.25, alpha:0, y:50},"goAway")
         .to("#line-2",{duration: 0.25, alpha:0, y:20},"goAway");
 
