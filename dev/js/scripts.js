@@ -15,10 +15,10 @@ function heroAnimation(){
 
 
     tl.from("#line-1",{duration:1,x:-200,alpha:0})
-     .from("#portrait",{duration:.5,x: +200,alpha:0})
+     .from("#portrait",{duration:1,x: +200,alpha:0})
         .from("#line-2",{duration: 1, alpha:0, y:-70})
         .from("#resumebutton",{duration: 1, alpha:0, y:200})
-       
+   
         
     return tl;
 }
@@ -26,7 +26,6 @@ function heroAnimation(){
 
 var mainTL = gsap.timeline();
 mainTL.add(heroAnimation());
-
 
 var heroSizeNumber = 4;
 
@@ -45,10 +44,10 @@ mm.add("(max-width: 767px)", () => {
 let trailBtn = document.querySelector("#resumebutton");
 
 var buttonAnimation = gsap.timeline({paused:true});
-buttonAnimation.to("#resumebutton",{duration:0.25, scale:heroSizeNumber},"goAway")
-        .to("#resumebutton",{duration: 0.2})
-        .to("#line-1",{duration: 0.25, alpha:0, y:50},"goAway")
-        .to("#line-2",{duration: 0.25, alpha:0, y:20},"goAway");
+buttonAnimation.to("#resumebutton",{duration:1, rotate:heroSizeNumber},"stay")
+        .to("#resumebutton",{duration: 1,rotate: 360})
+        .to("#line-1",{duration: 1, alpha:0, y:50},"open")
+        .to("#line-2",{duration: 1, alpha:0, y:20},"open");
 
 trailBtn.addEventListener("mouseover",function(){
    buttonAnimation.play();
