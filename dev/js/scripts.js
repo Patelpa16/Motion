@@ -46,8 +46,8 @@ let trailBtn = document.querySelector("#resumebutton");
 var buttonAnimation = gsap.timeline({paused:true});
 buttonAnimation.to("#resumebutton",{duration:1, rotate:heroSizeNumber},"stay")
         .to("#resumebutton",{duration: 1,rotate: 360})
-        .to("#line-1",{duration: 1, alpha:0, y:50},"open")
-        .to("#line-2",{duration: 1, alpha:0, y:20},"open");
+        .to("#line-1",{duration: 1},"open")
+        .to("#line-2",{duration: 1},"open");
 
 trailBtn.addEventListener("mouseover",function(){
    buttonAnimation.play();
