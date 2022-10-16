@@ -1,64 +1,13 @@
-#hero {
-    background-image: url("../img/hero.jpg");
-    background-size: cover;
+/* =============
+    Hero 
+============= */
+#hero{
+    background-image: url('../img/hero/hero.jpg');
     background-position: center;
-    height: 100vh;
+    background-size: cover;
+    height: 360px;
 
-    #overlay {
-        background-color: rgba(var(--black0), 100);
-        height: 100%;
-        display: flex;
-        align-items: center;
-        align-content: flex-end;
-
-
-
-        section {
-            padding-left: 45px;
-
-            h1 {
-                margin: 0;
-                color: var(--white);
-                font-family: 'Josefin Sans', sans-serif;
-                font-weight: 200;
-                font-size: rem-calc(50);
-
-            }
-
-
-
-            button {
-                margin-top: 70px;
-                border: none;
-                border-radius: 12px;
-                background-color: var(--lightblue);
-                color: var(--white);
-                padding: 8px 18px;
-                font-size: rem-calc(20);
-                font-family: 'Josefin Sans', sans-serif;
-
-
-            }
-        }
-
-        #portrait {
-            background-image: url("../img/portrait.jpg");
-            background-size: cover;
-            background-position: center;
-            height: 20vh;
-            padding-left: 50px;
-        }
-
+    @include md {
+        height: 683px;
     }
-}
- @media screen and (min-width: 1024px){
-  #portrait {
-    margin-left: 300px !important;
-  }
-}
-
- @media screen and (max-width: 200px){
-  .h1 {
-    font-size: rem-calc(20) !important;
-  }
 }
