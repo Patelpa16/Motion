@@ -1,4 +1,3 @@
-import { gsap } from "gsap";
 import $ from "jquery";
 
 let $nav = $('nav[data-nav]');
