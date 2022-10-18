@@ -1,3 +1,6 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.from("#history-middle", {duration:.7,x:-200,alpha0});
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#history-middle", {duration:1,x:200,scrollTrigger:{trigger: "#history-middle"}});
