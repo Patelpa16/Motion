@@ -66,6 +66,14 @@ paragraphTimeline
     ease: "power1.out",
   });
 
+  skillsTimeline.from(["#yellowbar-1", "#yellowbar-2", "#yellowbar-3"], {
+  width: 0,
+  duration: 1.5,
+  ease: "circ.out",
+  stagger: 0.3,
+});
+
+
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
 // gsap.from("#yellowbar", {duration: 1, alphay:-70})
