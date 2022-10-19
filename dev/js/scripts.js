@@ -25,7 +25,7 @@ gsap.fromTo(
       trigger: robotPictureSection,
       // markers: true,
       scrub: 1,
-      top: "-=200",
+      top: "-=100",
       end: "-=1"
     }
   }
@@ -104,6 +104,43 @@ galleryTimeline
   );
 
 
+
+
+  // trial and error - Not usable
+
+// ScrollTrigger.create({
+//   trigger: "#hero",
+//   start: "top top",
+//   end: "bottom 50%+=100px",
+// }); // I created scroll triggers on timeline objects
+
+// gsap.fromTo("#yellowbar-1", {width: 0},{width: "64%"})
+// gsap.fromTo("#yellowbar-2", {width: 0},{width: "78%"})
+// gsap.fromTo("#yellowbar-3", {width: 0},{width: "94%"}) // .fromTo notworking
+
+// gsap.timeline().to("#history-first", {y:40, opacity: 1}).from("#history-second") // not working
+
+// gsap.to(["#gallery-1", "#gallery-2", "#gallery-3", "#gallery-4", "#gallery-5"], {x: -50, opacity: 0}); // not wokring
+
+// gsap.to('#history-first', {
+//   x: 100,
+//   scrollTrigger: {
+//     trigger: 'h1',
+//     start: 'top bottom',
+//     end: 'center center',
+//     scrub: true
+//   }
+// });
+
+// gsap.to('#robot-hero', {
+//   x: 200,
+//   scrollTrigger: {
+//     trigger: page,
+//     start: 'center center',
+//     end: 'bottom top',
+//     scrub: true
+//   }
+// }); // not working
 
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
