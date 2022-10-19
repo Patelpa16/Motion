@@ -23,7 +23,7 @@ gsap.fromTo(
     clipPath: "inset(0% 0% 0% 0%)",
     scrollTrigger: {
       trigger: robotPictureSection,
-      markers: true,
+      // markers: true,
       scrub: 1,
       top: "-=200",
       end: "-=1"
@@ -36,24 +36,24 @@ gsap.fromTo(
 const paragraphTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: paragraphSection,
-    start: "-=425",
-    markers: true
+    start: "-=225"
+    // markers: true
   }
 });
 
 const skillsTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: skillsSection,
-    start: "-=450",
-    markers: true
+    start: "-=250"
+    // markers: true
   }
 });
 
 const galleryTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: skynetAlbumSection,
-    start: "-=550",
-    markers: true
+    start: "-=550"
+    // markers: true
   }
 });
 
