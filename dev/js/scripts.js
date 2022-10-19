@@ -112,15 +112,15 @@ galleryTimeline
 //   trigger: "#hero",
 //   start: "top top",
 //   end: "bottom 50%+=100px",
-// }); // I created scroll triggers on timeline objects
+// }); //  created scroll triggers on timeline objects
 
 // gsap.fromTo("#yellowbar-1", {width: 0},{width: "64%"})
 // gsap.fromTo("#yellowbar-2", {width: 0},{width: "78%"})
-// gsap.fromTo("#yellowbar-3", {width: 0},{width: "94%"}) // .fromTo notworking
+// gsap.fromTo("#yellowbar-3", {width: 0},{width: "94%"}) // .from To ----------notworking
 
-// gsap.timeline().to("#history-first", {y:40, opacity: 1}).from("#history-second") // not working
+// gsap.timeline().to("#history-first", {y:40, opacity: 1}).from("#history-second") // ---------------not working
 
-// gsap.to(["#gallery-1", "#gallery-2", "#gallery-3", "#gallery-4", "#gallery-5"], {x: -50, opacity: 0}); // not wokring
+// gsap.to(["#gallery-1", "#gallery-2", "#gallery-3", "#gallery-4", "#gallery-5"], {x: -50, opacity: 0}); // ---------------not wokring
 
 // gsap.to('#history-first', {
 //   x: 100,
