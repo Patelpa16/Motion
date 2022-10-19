@@ -12,6 +12,32 @@ gsap.registerPlugin(ScrollTrigger);
 // Elements
 const paragraphSection = document.querySelector("#history");
 const skillsSection = document.querySelector("#skills");
+const skynetAlbumSection = document.querySelector("#skynet");
+const robotPictureSection = document.querySelector("#hero-2");
+
+// Initial animations
+gsap.from("#history-first", {
+  opacity: 0,
+  y: 50,
+  duration: 1,
+  ease: "power1.out",
+});
+
+gsap.fromTo(
+  "#robot-hero",
+  { clipPath: "inset(10% 16% 10% 16%)" },
+  {
+    clipPath: "inset(0% 0% 0% 0%)",
+    scrollTrigger: {
+      trigger: robotPictureSection,
+      markers: true,
+      scrub: 1,
+      top: "-=200",
+      end: "-=1",
+    },
+  }
+);
+
 
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
