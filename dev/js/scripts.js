@@ -21,6 +21,38 @@ gsap.to('#imgrobot', {
 })
 
 
+gsap.to('#imgrobot', {
+  scale: 1.5,
+  duration: 1,
+  scrollTrigger: {
+    trigger: '#imgrobot',
+    markers: true,
+    start: "top center",
+  end: "bottom center"
+    
+
+  }
+})
+
+gsap.timeline({
+      scrollTrigger: {
+        trigger: "#skills-content",
+        start: "top center",
+        toggleActions: "play pause resume reverse",
+        scrub: 0.5,
+        markers: true
+      }
+    })
+    .fromTo(
+      "#skills-content",
+      { x: 200, opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 3
+      }
+    );
+
 
 // gsap.to("#history-first", {
 //   backgroundPositionX: "0%",
