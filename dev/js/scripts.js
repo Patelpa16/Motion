@@ -3,6 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// gsap.from("#hero", {duration: 1, alphay:-70})
+gsap.from("#yellowbar", {duration: 1, alphay:-70})
+
 
 
 // gsap.to("#history-first", {
@@ -34,9 +37,9 @@ gsap.from("#history-first", {
 });
 
 
-gsap.from("#emotion", {
+gsap.from("#yellow-bar", {
   scrollTrigger: {
-    trigger: "#emotion",
+    trigger: "#",
     scrub: true,
     start: "top bottom",
     end: "top top",
@@ -46,7 +49,6 @@ gsap.from("#emotion", {
   transformOrigin: "left center", 
   ease: "none"
 });
-
 
 
 //gsap.to("#history-middle", {
