@@ -1,3 +1,7 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 import { gsap } from "gsap";
@@ -8,16 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 // Elements
 const paragraphSection = document.querySelector("#history");
 const skillsSection = document.querySelector("#skills");
-const skynetAlbumSection = document.querySelector("#skynet");
-const robotPictureSection = document.querySelector("#hero-2");
 
-// Initial animations
-gsap.from("#history-first", {
-  opacity: 0,
-  y: 50,
-  duration: 1,
-  ease: "power1.out",
-});
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
 // gsap.from("#yellowbar", {duration: 1, alphay:-70})
