@@ -3,19 +3,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-// Elements
 const paragraphSection = document.querySelector("#history");
-const skillsSection = document.querySelector("#skills");
-const skynetAlbumSection = document.querySelector("#skynet");
-const robotPictureSection = document.querySelector("#hero-2");
 
-// Initial animations
+
+
+
+
 gsap.from("#history-first", {
   opacity: 0,
   y: 50,
@@ -43,20 +36,6 @@ const paragraphTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: paragraphSection,
     start: "-=425",
-    markers: true,
-  },
-});
-const skillsTimeline = gsap.timeline({
-  scrollTrigger: {
-    trigger: skillsSection,
-    start: "-=450",
-    markers: true,
-  },
-});
-const galleryTimeline = gsap.timeline({
-  scrollTrigger: {
-    trigger: skynetAlbumSection,
-    start: "-=550",
     markers: true,
   },
 });
