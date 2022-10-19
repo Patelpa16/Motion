@@ -38,6 +38,28 @@ gsap.fromTo(
   }
 );
 
+// Timelines
+const paragraphTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: paragraphSection,
+    start: "-=425",
+    markers: true,
+  },
+});
+const skillsTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: skillsSection,
+    start: "-=450",
+    markers: true,
+  },
+});
+const galleryTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: skynetAlbumSection,
+    start: "-=550",
+    markers: true,
+  },
+});
 
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
