@@ -1,57 +1,73 @@
+
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.from("#hero", {duration: 1, alphay:-70})
-gsap.from("#yellowbar", {duration: 1, alphay:-70})
+// Elements
+const paragraphSection = document.querySelector("#history");
+const skillsSection = document.querySelector("#skills");
+const skynetAlbumSection = document.querySelector("#skynet");
+const robotPictureSection = document.querySelector("#hero-2");
 
-
-gsap.to('#imgrobot', {
-  scale: 1.5,
+// Initial animations
+gsap.from("#history-first", {
+  opacity: 0,
+  y: 50,
   duration: 1,
-  scrollTrigger: {
-    trigger: '#imgrobot',
-    markers: true,
-    start: "top center",
-  end: "bottom center"
+  ease: "power1.out",
+});
+
+// // gsap.from("#hero", {duration: 1, alphay:-70})
+// gsap.from("#yellowbar", {duration: 1, alphay:-70})
+
+
+// gsap.to('#imgrobot', {
+//   scale: 1.5,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: '#imgrobot',
+//     markers: true,
+//     start: "top center",
+//   end: "bottom center"
     
 
-  }
-})
+//   }
+// })
 
 
-gsap.to('#imgrobot', {
-  scale: 1.5,
-  duration: 1,
-  scrollTrigger: {
-    trigger: '#imgrobot',
-    markers: true,
-    start: "top center",
-  end: "bottom center"
+// gsap.to('#imgrobot', {
+//   scale: 1.5,
+//   duration: 1,
+//   scrollTrigger: {
+//     trigger: '#imgrobot',
+//     markers: true,
+//     start: "top center",
+//   end: "bottom center"
     
 
-  }
-})
+//   }
+// })
 
-gsap.timeline({
-      scrollTrigger: {
-        trigger: "#skills-content",
-        start: "top center",
-        toggleActions: "play pause resume reverse",
-        scrub: 0.5,
-        markers: true
-      }
-    })
-    .fromTo(
-      "#skills-content",
-      { x: 200, opacity: 0 },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 3
-      }
-    );
+// gsap.timeline({
+//       scrollTrigger: {
+//         trigger: "#skills-content",
+//         start: "top center",
+//         toggleActions: "play pause resume reverse",
+//         scrub: 0.5,
+//         markers: true
+//       }
+//     })
+//     .fromTo(
+//       "#skills-content",
+//       { x: 200, opacity: 0 },
+//       {
+//         x: 0,
+//         opacity: 1,
+//         duration: 3
+//       }
+//     );
 
 
 // gsap.to("#history-first", {
