@@ -6,6 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 const paragraphSection = document.querySelector("#history");
 const skillsSection = document.querySelector("#skills");
 const skynetAlbumSection = document.querySelector("#skynet");
+const robotPictureSection = document.querySelector("#hero-2");
 
 
 gsap.from("#history-first", {
@@ -29,6 +30,7 @@ gsap.fromTo(
     }
   }
 );
+
 
 // Timelines
 const paragraphTimeline = gsap.timeline({
