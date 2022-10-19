@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const paragraphSection = document.querySelector("#history");
+const skillsSection = document.querySelector("#skills");
 
 
 
@@ -39,6 +40,31 @@ const paragraphTimeline = gsap.timeline({
     markers: true,
   },
 });
+
+const skillsTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: skillsSection,
+    start: "-=450",
+    markers: true,
+  },
+});
+
+// Timeline Animations
+paragraphTimeline
+  .from("#history-middle p", {
+    opacity: 0,
+    duration: 1.2,
+    y: 50,
+    stagger: 0.4,
+    ease: "power1.out",
+  })
+  .from("#history-last", {
+    opacity: 0,
+    duration: 1.2,
+    y: 50,
+    stagger: 0.4,
+    ease: "power1.out",
+  });
 
 
 // // gsap.from("#hero", {duration: 1, alphay:-70})
