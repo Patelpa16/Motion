@@ -5,16 +5,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const paragraphSection = document.querySelector("#history");
 const skillsSection = document.querySelector("#skills");
-
-
-
+const skynetAlbumSection = document.querySelector("#skynet");
 
 
 gsap.from("#history-first", {
   opacity: 0,
   y: 50,
   duration: 1,
-  ease: "power1.out",
+  ease: "power1.out"
 });
 
 gsap.fromTo(
@@ -27,8 +25,8 @@ gsap.fromTo(
       markers: true,
       scrub: 1,
       top: "-=200",
-      end: "-=1",
-    },
+      end: "-=1"
+    }
   }
 );
 
@@ -37,17 +35,26 @@ const paragraphTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: paragraphSection,
     start: "-=425",
-    markers: true,
-  },
+    markers: true
+  }
 });
 
 const skillsTimeline = gsap.timeline({
   scrollTrigger: {
     trigger: skillsSection,
     start: "-=450",
-    markers: true,
-  },
+    markers: true
+  }
 });
+
+const galleryTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: skynetAlbumSection,
+    start: "-=550",
+    markers: true
+  }
+});
+
 
 // Timeline Animations
 paragraphTimeline
@@ -56,22 +63,44 @@ paragraphTimeline
     duration: 1.2,
     y: 50,
     stagger: 0.4,
-    ease: "power1.out",
+    ease: "power1.out"
   })
   .from("#history-last", {
     opacity: 0,
     duration: 1.2,
     y: 50,
     stagger: 0.4,
-    ease: "power1.out",
+    ease: "power1.out"
   });
 
   skillsTimeline.from(["#yellowbar-1", "#yellowbar-2", "#yellowbar-3"], {
   width: 0,
   duration: 1.5,
   ease: "circ.out",
-  stagger: 0.3,
+  stagger: 0.3
 });
+
+galleryTimeline
+  .from("#gallery-2", { x: 50, opacity: 0, duration: 1.2 })
+  .from("#gallery-5", { x: 50, opacity: 0, duration: 1.2 }, "-=1")
+  .from(
+    "#gallery-1",
+    {
+      y: -50,
+      opacity: 0,
+      duration: 1.2
+    },
+    "-=1"
+  )
+  .from("#gallery-6", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
+  .from("#gallery-3", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
+  .from("#gallery-4", { y: 50, opacity: 0, duration: 1.2 }, "-=1")
+  .from(
+    "#gallery-7",
+    { scale: 1.2, opacity: 0, duration: 1.2, ease: "back.out(4)" },
+    "-=1"
+  );
+
 
 
 
