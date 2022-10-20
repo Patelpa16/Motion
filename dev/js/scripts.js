@@ -3,6 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+// Initial animations
 gsap.from("#history-first", {
   opacity: 0,
   y: 50,
@@ -30,17 +33,8 @@ function history() {
     scrollTrigger: {
       trigger: "#history",
       start: "-=225",
-      markers: true,
-    },
-  });
-
-  function history() {
-  var tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#history",
-      start: "-=225",
-      markers: true,
-    },
+      markers: true
+    }
   });
 
   tl.from("#history-middle p", {
@@ -48,13 +42,13 @@ function history() {
     duration: 1.2,
     y: 50,
     stagger: 0.4,
-    ease: "power1.out",
+    ease: "power1.out"
   }).from("#history-last", {
     opacity: 0,
     duration: 1.2,
     y: 50,
     stagger: 0.4,
-    ease: "power1.out",
+    ease: "power1.out"
   });
 
   return tl;
@@ -65,15 +59,15 @@ function skills() {
     scrollTrigger: {
       trigger: "#skills",
       start: "-=250",
-      markers: true,
-    },
+      markers: true
+    }
   });
 
   tl.from(["#yellowbar-1", "#yellowbar-2", "#yellowbar-3"], {
     width: 0,
     duration: 1.5,
     ease: "circ.out",
-    stagger: 0.3,
+    stagger: 0.3
   });
 
   return tl;
@@ -84,20 +78,22 @@ function gallery() {
     scrollTrigger: {
       trigger: "#skynet",
       start: "-=550",
-      markers: true,
-    },
+      markers: true
+    }
   });
-   tl.from("#gallery-2", { x: 50, opacity: 0, duration: 1.2 })
-   .from("#gallery-5", { x: 50, opacity: 0, duration: 1.2 }, "-=1")
-   .from(
-"#gallery-1",
+
+  tl.from("#gallery-2", { x: 50, opacity: 0, duration: 1.2 })
+    .from("#gallery-5", { x: 50, opacity: 0, duration: 1.2 }, "-=1")
+    .from(
+      "#gallery-1",
       {
         y: -50,
         opacity: 0,
-        duration: 1.2,
+        duration: 1.2
       },
       "-=1"
-      .from("#gallery-6", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
+    )
+    .from("#gallery-6", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
     .from("#gallery-3", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
     .from("#gallery-4", { y: 50, opacity: 0, duration: 1.2 }, "-=1")
     .from(
@@ -107,13 +103,15 @@ function gallery() {
     );
 
   return tl;
-   var mainTimeline = gsap.timeline();
+}
 
 
+var mainTimeline = gsap.timeline();
+
+// Adding child timelines to main timeline
 mainTimeline.add(history())
 .add(skills())
 .add(gallery());
-
 
 
 
