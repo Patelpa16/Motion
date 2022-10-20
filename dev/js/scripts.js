@@ -8,6 +8,33 @@ const skillsSection = document.querySelector("#skills");
 const skynetAlbumSection = document.querySelector("#skynet");
 const robotPictureSection = document.querySelector("#hero-2");
 
+// function history() {
+// const paragraphSection = document.querySelector("#history");
+// const paragraphTimeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: paragraphSection,
+//     start: "-=225"
+//     // markers: true
+//   }
+// });
+// paragraphTimeline
+//   .from("#history-middle p", {
+//     opacity: 0,
+//     duration: 1.2,
+//     y: 50,
+//     stagger: 0.4,
+//     ease: "power1.out"
+//   })
+//   .from("#history-last", {
+//     opacity: 0,
+//     duration: 1.2,
+//     y: 50,
+//     stagger: 0.4,
+//     ease: "power1.out"
+//   });
+
+// }
+
 
 gsap.from("#history-first", {
   opacity: 0,
@@ -33,12 +60,13 @@ gsap.fromTo(
 
 
 // Timelines
-const paragraphTimeline = gsap.timeline({
+// const paragraphTimeline = gsap.timeline({
+  function histroy () {
   scrollTrigger: {
-    trigger: paragraphSection,
+    trigger: history,
     start: "-=225"
     // markers: true
-  }
+  },
 });
 
 const skillsTimeline = gsap.timeline({
