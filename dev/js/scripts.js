@@ -3,22 +3,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// const paragraphSection = document.querySelector("#history");
-// const skillsSection = document.querySelector("#skills");
-// const skynetAlbumSection = document.querySelector("#skynet");
-// const robotPictureSection = document.querySelector("#hero-2");
-
-// function history() {
-// const paragraphSection = document.querySelector("#history");
-// const paragraphTimeline = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: paragraphSection,
-//     start: "-=225"
-//     // markers: true
-//   }
-// });
-// }
-
 gsap.from("#history-first", {
   opacity: 0,
   y: 50,
@@ -76,8 +60,82 @@ function history() {
   return tl;
 }
 
+function skills() {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#skills",
+      start: "-=250",
+      markers: true,
+    },
+  });
+
+  tl.from(["#yellowbar-1", "#yellowbar-2", "#yellowbar-3"], {
+    width: 0,
+    duration: 1.5,
+    ease: "circ.out",
+    stagger: 0.3,
+  });
+
+  return tl;
+}
+
+function gallery() {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#skynet",
+      start: "-=550",
+      markers: true,
+    },
+  });
+   tl.from("#gallery-2", { x: 50, opacity: 0, duration: 1.2 })
+   .from("#gallery-5", { x: 50, opacity: 0, duration: 1.2 }, "-=1")
+   .from(
+"#gallery-1",
+      {
+        y: -50,
+        opacity: 0,
+        duration: 1.2,
+      },
+      "-=1"
+      .from("#gallery-6", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
+    .from("#gallery-3", { x: -50, opacity: 0, duration: 1.2 }, "-=1")
+    .from("#gallery-4", { y: 50, opacity: 0, duration: 1.2 }, "-=1")
+    .from(
+      "#gallery-7",
+      { scale: 1.2, opacity: 0, duration: 1.2, ease: "back.out(4)" },
+      "-=1"
+    );
+
+  return tl;
+   var mainTimeline = gsap.timeline();
 
 
+mainTimeline.add(history())
+.add(skills())
+.add(gallery());
+
+
+
+
+
+
+
+
+// const paragraphSection = document.querySelector("#history");
+// const skillsSection = document.querySelector("#skills");
+// const skynetAlbumSection = document.querySelector("#skynet");
+// const robotPictureSection = document.querySelector("#hero-2");
+
+// function history() {
+// const paragraphSection = document.querySelector("#history");
+// const paragraphTimeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: paragraphSection,
+//     start: "-=225"
+//     // markers: true
+//   }
+// });
+// }
 
 // gsap.from("#history-first", {
 //   opacity: 0,
