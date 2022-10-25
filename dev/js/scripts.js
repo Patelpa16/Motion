@@ -54,6 +54,7 @@ function landingAnimation() {
     "-=1"
   );
 }
+
 function historyAnimation() {
   var tl = gsap.timeline({
     scrollTrigger: {
@@ -69,6 +70,7 @@ function historyAnimation() {
     .from("#second-paragraph", { opacity: 0, y: 100, duration: 0.5 })
     .from("#history-last", { opacity: 0, y: 100, duration: 0.5 });
 }
+
 function skillsAnimation() {
   var tl = gsap.timeline({
     scrollTrigger: {
@@ -98,6 +100,25 @@ function skillsAnimation() {
       stagger: 0.3
     });
 }
+
+function heroTwoAnimation() {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#hero-2",
+      start: "-=15% center",
+      end: "center-=200 center",
+      markers: false,
+      scrub: 1
+    }
+  });
+
+  tl.from("#robot-hero", { clipPath: "inset(38% 30% 38% 30%)" }).from(
+    "#robot-hero",
+    { scale: 2 },
+    "<"
+  );
+}
+
 
 
 
@@ -170,3 +191,4 @@ mainTimeline
   .add(landingAnimation())
   .add(historyAnimation())
   .add(skillsAnimation())
+  .add(heroTwoAnimation())
