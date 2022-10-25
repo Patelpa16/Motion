@@ -1,0 +1,61 @@
+/* =============
+    Reveal section
+============= */
+
+.scroll-to-reveal {
+  z-index: 50;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  bottom: 3rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+#intro-scrolling {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .reveal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    background-color: transparent;
+    .reveal-circle {
+      svg {
+        width: 100vw;
+        height: 100vh;
+        transform: scale(1);
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 11;
+      }
+    }
+  }
+  .intro-section {
+    article div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: scale(0.5);
+      text-align: center;
+
+      @include md {
+        transform: scale(1);
+      }
+    }
+  }
+}

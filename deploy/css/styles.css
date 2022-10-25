@@ -457,6 +457,7 @@ textarea {
 ============= */
 header {
   background-color: #fff;
+  display: grid;
   left: 0;
   position: fixed;
   top: 0;
@@ -563,17 +564,101 @@ footer > div ul li a:visited:active {
 }
 
 /* =============
+    Reveal section
+============= */
+.scroll-to-reveal {
+  z-index: 50;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 34px;
+  bottom: 3rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+#intro-scrolling {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#intro-scrolling .reveal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  background-color: transparent;
+}
+#intro-scrolling .reveal-container .reveal-circle svg {
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+}
+#intro-scrolling .intro-section article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.5);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #intro-scrolling .intro-section article div {
+    transform: scale(1);
+  }
+}
+
+/* =============
     Hero 
 ============= */
-#hero {
+#landing-section {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #landing-section {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+  }
+}
+#landing-section #hero {
   background-image: url("../img/hero/hero.jpg");
   background-position: center;
   background-size: cover;
   height: 360px;
 }
 @media (min-width: 768px) {
-  #hero {
+  #landing-section #hero {
     height: 683px;
+    width: 1000px;
+  }
+}
+#landing-section #history-first {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  #landing-section #history-first {
+    position: relative;
+    padding-right: 3rem;
+    justify-content: flex-start;
+    text-align: right;
   }
 }
 
@@ -594,7 +679,7 @@ footer > div ul li a:visited:active {
 }
 @media (min-width: 1200px) {
   #history {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 1000px auto;
   }
 }
 #history > div {
@@ -657,7 +742,7 @@ footer > div ul li a:visited:active {
   #history > div #history-middle {
     display: grid;
     grid-template-areas: ". history-middle .";
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 0.1% auto 0.1%;
   }
 }
 @media (min-width: 1024px) {
@@ -671,10 +756,12 @@ footer > div ul li a:visited:active {
   line-height: 1.375rem;
   margin-top: 25px;
   text-align: justify;
+  color: #151515;
 }
 @media (min-width: 768px) {
   #history > div #history-middle > div p {
-    line-height: 1.625rem;
+    line-height: 2.375rem;
+    font-size: 2.125rem;
     margin-top: 34px;
   }
 }
@@ -687,7 +774,7 @@ footer > div ul li a:visited:active {
 }
 @media (min-width: 1024px) {
   #history > div #history-last {
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: 0.1% auto 0.1%;
   }
 }
 @media (min-width: 768px) {
@@ -702,6 +789,7 @@ footer > div ul li a:visited:active {
 @media (min-width: 768px) {
   #history > div #history-last > div h3 {
     margin-top: 80px;
+    font-size: 2.375rem;
   }
 }
 @media (min-width: 1024px) {
@@ -713,10 +801,19 @@ footer > div ul li a:visited:active {
   line-height: 1.375rem;
   text-align: justify;
 }
+@media (min-width: 768px) {
+  #history > div #history-last > div p {
+    font-size: 2.125rem;
+    line-height: 2.125rem;
+  }
+}
 
 /* =============
     Skills
 ============= */
+#skills {
+  z-index: 10;
+}
 @media (min-width: 1200px) {
   #skills {
     display: grid;
@@ -726,8 +823,8 @@ footer > div ul li a:visited:active {
 }
 @media (min-width: 1024px) {
   #skills > div {
-    display: grid;
-    grid-template-columns: 40% auto;
+    display: flex;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -740,6 +837,7 @@ footer > div ul li a:visited:active {
   background-position: center;
   background-size: cover;
   height: 380px;
+  border-radius: 10px 0 0 10px;
 }
 @media (min-width: 768px) {
   #skills > div aside {
@@ -749,9 +847,13 @@ footer > div ul li a:visited:active {
 @media (min-width: 1024px) {
   #skills > div aside {
     height: auto;
+    width: 100vw;
+    background-color: red;
   }
 }
 #skills > div #skills-content {
+  border-radius: 0 10px 10px 0;
+  z-index: inherit;
   background-color: #222222;
   color: #fff;
   display: grid;
@@ -759,7 +861,6 @@ footer > div ul li a:visited:active {
   grid-template-areas: ". skills .";
   padding: 60px 0;
   grid-template-columns: 10px auto 10px;
-  padding: 60px 0;
 }
 @media (min-width: 768px) {
   #skills > div #skills-content {
@@ -769,6 +870,9 @@ footer > div ul li a:visited:active {
 @media (min-width: 1024px) {
   #skills > div #skills-content {
     padding: 25px 0 44px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
   }
 }
 #skills > div #skills-content > div {
@@ -778,32 +882,46 @@ footer > div ul li a:visited:active {
 }
 #skills > div #skills-content > div h1 {
   font-family: "Comfortaa", cursive;
-  font-size: 1.3125rem;
+  font-size: 2.125rem;
   line-height: 1.625rem;
   margin-bottom: 35px;
+  text-align: center;
 }
 #skills > div #skills-content > div p {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: left;
   display: inline-block;
+  padding: 10px 50px;
+}
+@media (min-width: 1024px) {
+  #skills > div #skills-content > div p {
+    padding: 10px 50px;
+  }
+}
+#skills > div #skills-content > div ul {
+  position: relative;
 }
 #skills > div #skills-content > div ul li {
   margin-top: 46px;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   #skills > div #skills-content > div ul li {
     margin-top: 51px;
+    padding: 10px 75px;
   }
 }
 #skills > div #skills-content > div ul li .top {
   display: flex;
 }
 #skills > div #skills-content > div ul li .top h5 {
-  font-size: 1.125rem;
+  font-size: 1.875rem;
   font-weight: 400;
 }
 #skills > div #skills-content > div ul li .top h4 {
-  font-size: 1.125rem;
+  font-size: 1.875rem;
   margin-left: auto;
 }
 #skills > div #skills-content > div ul li .bottom {
@@ -811,19 +929,51 @@ footer > div ul li a:visited:active {
   height: 9px;
   margin-top: 5px;
   width: 100%;
+  border-radius: 22px;
 }
 #skills > div #skills-content > div ul li .bottom > div {
   background-color: #F8C832;
   height: 9px;
 }
+#skills > div #skills-content > div ul #emotion {
+  padding: 0 3rem;
+}
+#skills > div #skills-content > div ul #emotion .top {
+  display: flex;
+  align-items: center;
+}
 #skills > div #skills-content > div ul #emotion .yellow-bar {
   width: 64%;
+  border-radius: 22px;
+  background: #f8c831;
+  background: linear-gradient(90deg, #f8c831 47%, #69911a 100%);
+}
+#skills > div #skills-content > div ul #learning {
+  padding: 0 3rem;
+}
+#skills > div #skills-content > div ul #learning .top {
+  display: flex;
+  align-items: center;
 }
 #skills > div #skills-content > div ul #learning .yellow-bar {
   width: 90%;
+  border-radius: 22px;
+  background: #f8c831;
+  background: linear-gradient(90deg, #f8c831 47%, #69911a 100%);
+}
+#skills > div #skills-content > div ul #math {
+  padding: 0 3rem;
+}
+#skills > div #skills-content > div ul #math .top {
+  display: flex;
+  align-items: center;
 }
 #skills > div #skills-content > div ul #math .yellow-bar {
   width: 95%;
+  height: 11px;
+  border-radius: 22px;
+  background: #f8c831;
+  background: linear-gradient(90deg, #f8c831 47%, #69911a 100%);
 }
 
 /* =============
@@ -879,7 +1029,7 @@ footer > div ul li a:visited:active {
 }
 @media (min-width: 768px) {
   #skynet > div ul {
-    grid-template-areas: "gallery-1 gallery-3" "gallery-1 gallery-7" "gallery-5 gallery-6";
+    grid-template-areas: "gallery-3 gallery-3" "gallery-1 gallery-7" "gallery-5 gallery-6";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 277px);
   }
@@ -893,13 +1043,16 @@ footer > div ul li a:visited:active {
 #skynet > div ul li {
   background-position: center;
   background-size: cover;
+  border-radius: 22px;
 }
 #skynet > div ul #gallery-1 {
   background-image: url("../img/skynet/gallery-1.jpg");
   grid-area: gallery-1;
+  z-index: 15;
 }
 #skynet > div ul #gallery-2 {
   background-image: url("../img/skynet/gallery-2.jpg");
+  z-index: 15;
 }
 @media (min-width: 1024px) {
   #skynet > div ul #gallery-2 {
@@ -910,9 +1063,11 @@ footer > div ul li a:visited:active {
   background-image: url("../img/skynet/gallery-3.jpg");
   background-position: center top;
   grid-area: gallery-3;
+  z-index: 15;
 }
 #skynet > div ul #gallery-4 {
   background-image: url("../img/skynet/gallery-4.jpg");
+  z-index: 15;
 }
 @media (min-width: 1024px) {
   #skynet > div ul #gallery-4 {
@@ -921,6 +1076,7 @@ footer > div ul li a:visited:active {
 }
 #skynet > div ul #gallery-5 {
   background-image: url("../img/skynet/gallery-5.jpg");
+  z-index: 15;
 }
 @media (min-width: 768px) {
   #skynet > div ul #gallery-5 {
@@ -929,6 +1085,7 @@ footer > div ul li a:visited:active {
 }
 #skynet > div ul #gallery-6 {
   background-image: url("../img/skynet/gallery-6.jpg");
+  z-index: 15;
   grid-area: gallery-6;
 }
 #skynet > div ul #gallery-7 {
@@ -938,6 +1095,8 @@ footer > div ul li a:visited:active {
   font-family: "Pacifico", cursive;
   grid-area: gallery-7;
   justify-content: center;
+  user-select: none;
+  pointer-events: none;
 }
 #skynet > div ul #gallery-7 h1 {
   font-size: 2.6875rem;
