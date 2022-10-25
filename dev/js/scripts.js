@@ -118,71 +118,42 @@ function heroTwoAnimation() {
     "<"
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function galleryAnimation() {
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#skynet",
+      pin: true,
+      start: "top top",
+      end: "+=2000",
+      markers: false,
+      scrub: 1
+    },
+    defaults: {
+      duration: 1
+    }
+  });
+
+  tl.from(["#gallery-7"], { opacity: 0, scale: 25 })
+    .from(
+      ["#gallery-1", "#gallery-4"],
+      {
+        scale: 5,
+        stagger: 0.3,
+        opacity: 0,
+        clipPath: "inset(40% 40% 40% 40%)"
+      },
+      "-=.25"
+    )
+    .from(
+      ["#gallery-6", "#gallery-3", "#gallery-2", "#gallery-5"],
+      {
+        scale: 0.5,
+        stagger: 0.3,
+        opacity: 0
+      },
+      "<"
+    );
+}
 
 var mainTimeline = gsap.timeline();
 
@@ -192,3 +163,4 @@ mainTimeline
   .add(historyAnimation())
   .add(skillsAnimation())
   .add(heroTwoAnimation())
+  .add(galleryAnimation());
