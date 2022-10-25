@@ -37,24 +37,56 @@
             </section>
         </div>
     </header>
-    <section id="hero">
-           
-        </section>
+
+    <section id="intro-scrolling">
+        <div class="scroll-to-reveal">Scroll to reveal...</div>
+        <div class="reveal-container">
+            <div class="reveal-circle">
+                <svg id="svg">
+                    <defs>
+                      <mask id="mask">
+                        <rect width="100%" height="100%" fill="white"></rect>
+                        <circle id="circle" cx="50%" cy="50%" r="100" fill="black"></circle>
+                      </mask>
+                    </defs>
+                    <!--<rect id="whiteLayer" width="100%" height="100%" fill="white"></rect>-->
+                    <rect width="100%" height="100%" fill="black" mask="url(#mask)"></rect>
+                  </svg>
+            </div>
+        </div>
+        <div class="intro-section">
+            <article id="history-first">
+                <div>
+                <img id="imgrobot" src="img/history/hero.jpg" alt="robot hero spot">
+                <h1><span id="early-history">Early History of</span> <span id="history-header">Machine Learning</span></h1>
+                <h4 id="yellow"> by Professor Karen Pine</h4>
+                </div>
+            </article>
+       
+            </div>
+            <div>
+        </div>
+    </section>
+
+
+<section id="landing-section">
+            <div id="hero"></div>
+            <article id="history-first">
+                <div>
+                <img id="imgrobot-2" src="img/history/hero.jpg" alt="robot hero spot">
+                <h1><span id="early-history-2">Early History of</span> <span id="history-header-2">Machine Learning</span></h1>
+                <h4 id="yellow-2"> by Professor Karen Pine</h4>
+                </div>
+            </article>
+</section>
+   
     <section id="history">
                 <div>
-                    <article id="history-first">
-                        <div>
-                            <img id="imgrobot" src="img/history/hero.jpg" alt="robot hero spot">
-                            <h1><span>Early History of</span> Machine Learning</h1>
-                            <h4 id="yellow"> by Professor Karen Pine</h4>
-                        </div>
-                        
-                    </article>
                     <article id="history-middle">
                         <div>
-                            <p>The first case of neural networks was in 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a paper about neurons, and how they work. They decided to create a model of this using an electrical circuit, and therefore the neural network was born.
+                            <p id="first-paragraph">The first case of neural networks was in 1943, when neurophysiologist Warren McCulloch and mathematician Walter Pitts wrote a paper about neurons, and how they work. They decided to create a model of this using an electrical circuit, and therefore the neural network was born.
                             </p>
-                            <p>Another extremely early instance of a neural network came in 1959, when Bernard Widrow and Marcian Hoff created two models of them at Stanford University. The first was called ADELINE, and it could detect binary patterns. For example, in a stream of bits, it could predict what the next one would be. The next generation was called MADELINE, and it could eliminate echo on phone lines, so had a useful real world application. It is still in use today.</p>
+                            <p id="second-paragraph">Another extremely early instance of a neural network came in 1959, when Bernard Widrow and Marcian Hoff created two models of them at Stanford University. The first was called ADELINE, and it could detect binary patterns. For example, in a stream of bits, it could predict what the next one would be. The next generation was called MADELINE, and it could eliminate echo on phone lines, so had a useful real world application. It is still in use today.</p>
                         </div>
                         
                     </article>
@@ -67,19 +99,21 @@
                     </article>
                 </div> 
             </section>
+
+
     <section id="skills">
                     <div>
-                        <aside></aside>
+                        <aside id="skills-picture"></aside>
                     
                         <section id="skills-content">
                             <div>
-                                <h1>Robot Skills </h1>
-                                <p>To be effective as both specialists and generalists — as well as being both practical and investigative — roboticists need a good set of supporting skills. In this list we've taken 25 career skills and grouped them into 10 essential skills for roboticists.</p>
+                                <h1 id="skills-header">Robot Skills </h1>
+                                <p id="skills-subheader">To be effective as both specialists and generalists — as well as being both practical and investigative — roboticists need a good set of supporting skills. In this list we've taken 25 career skills and grouped them into 10 essential skills for roboticists.</p>
                                 <ul>
                                     <li id="emotion">
                                         <section class="top">
-                                            <h5>Emotion</h5>
-                                            <h4>64%</h4>
+                                            <h5 id="skill-title1">Emotion</h5>
+                                            <h4 class="skill-percent">64%</h4>
                                         </section>
                 
                                         <section class="bottom">
@@ -89,8 +123,8 @@
                 
                                     <li id="learning">
                                         <section class="top">
-                                            <h5>Active Learning</h5>
-                                            <h4>90%</h4>
+                                            <h5 id="skill-title2">Active Learning</h5>
+                                            <h4 class="skill-percent">90%</h4>
                                         </section>
                                         <section class="bottom">
                                             <div id="yellowbar-2" class="yellow-bar"></div>
@@ -99,8 +133,8 @@
                 
                                     <li id="math">
                                         <section class="top">
-                                            <h5>Math</h5>
-                                            <h4>95%</h4>
+                                            <h5 id="skill-title3">Math</h5>
+                                            <h4 class="skill-percent">95%</h4>
                                         </section>
                                         <section class="bottom">
                                             <div id="yellowbar-3" class="yellow-bar"></div>
