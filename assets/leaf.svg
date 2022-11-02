@@ -1,0 +1,22 @@
+ <svg
+            width="422"
+            height="211"
+            viewBox="0 0 450 416"
+            fill="none"
+            id="leaf-svg"
+          >
+            <path
+              d="M289.89 123.42C201 65.9996 109 107.22 24 17.2196C4.20001 -3.78039 15.7 252.72 122.1 349.92C199.89 420.92 320 413 360.5 344C401 275 378.78 180.83 289.89 123.42V123.42Z"
+              stroke="black"
+              stroke-width="32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M141 205C227 286 316 334 433 352"
+              stroke="black"
+              stroke-width="32"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
