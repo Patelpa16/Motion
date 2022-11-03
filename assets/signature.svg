@@ -1,8 +1,9 @@
-  <svg
+<svg
             width="422"
             height="211"
             viewBox="0 0 692 386"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             id="simple-svg"
           >
             <path
@@ -78,3 +79,4 @@
               stroke-linecap="round"
             />
           </svg>
+        

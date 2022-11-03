@@ -20,3 +20,12 @@
 
 // Sections Styles
 @import "sections/_drawSVG";
+
+.blob {
+  position: absolute;
+  scale: 0.25;
+}
+.ellipse {
+  position: absolute;
+  left: 52rem;
+}

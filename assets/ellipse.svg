@@ -1,0 +1,22 @@
+ <svg class="ellipse" width="253" height="253" fill="none">
+            <circle
+              cx="126.5"
+              cy="126.5"
+              r="121.5"
+              stroke="url(#a)"
+              stroke-width="10"
+            />
+            <defs>
+              <linearGradient
+                id="a"
+                x1="0"
+                x2="253"
+                y1="14.5"
+                y2="253"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#DB0FAE" />
+                <stop offset="1" stop-color="#863BE7" />
+              </linearGradient>
+            </defs>
+          </svg>

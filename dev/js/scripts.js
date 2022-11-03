@@ -16,22 +16,60 @@ function simpleSVGAnimation() {
 function patternSVGAnimation() {
   var tl = gsap.timeline({ repeat: -1 });
 
-  tl.from("#leaf-svg path", {
-    drawSVG: 0,
-    stagger: 0.5,
-    duration: 2,
+  tl.to(".pattern line", {
+    drawSVG: "50% 100%",
+    stagger: 0.2,
+    duration: 0.5,
     ease: "sine.inOut",
-  });
+  })
+    .to(
+      ".pattern line",
+      {
+        drawSVG: "100% 0%",
+        stagger: 0.2,
+        duration: 0.5,
+        ease: "sine.inOut",
+      },
+      "-=3"
+    )
+    .to(
+      ".pattern line",
+      {
+        drawSVG: "50% 100%",
+        stagger: 0.2,
+        duration: 0.5,
+        ease: "sine.inOut",
+      },
+      "-=1.5"
+    )
+    .to(
+      ".pattern line",
+      {
+        drawSVG: "100% 0%",
+        stagger: 0.2,
+        duration: 0.5,
+        ease: "sine.inOut",
+      },
+      "-=3"
+    );
 }
 
 function uiSVGAnimation() {
   var tl = gsap.timeline({ repeat: -1 });
 
-  tl.from(".ui-arrow-1", {
-    drawSVG: 0,
-    stagger: 0.5,
+  tl.to(".blob", {
+    rotate: "360deg",
+    stagger: 0.8,
+    duration: 5,
     ease: "sine.inOut",
-  }).from(".ui-arrow-2", { drawSVG: 0, stagger: 0.5, ease: "sine.inOut" }, "<");
+  })
+    .fromTo(
+      ".ellipse circle",
+      { drawSVG: "0%" },
+      { drawSVG: "100%", duration: 5, ease: "sine.inOut" },
+      "<"
+    )
+    .fromTo(".ellipse circle", { drawSVG: "100%" }, { drawSVG: "1%" });
 }
 
 var mainTimeline = gsap.timeline();
