@@ -1,0 +1,86 @@
+body {
+  .preloader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    .blob-1,
+    .blob-2,
+    .blob-3 {
+      width: 350px;
+      position: absolute;
+      backdrop-filter: blur(2px);
+    }
+    .ellipse {
+      z-index: 1;
+      scale: 1.05;
+    }
+    .blob-1 {
+      z-index: 1;
+    }
+    .blob-2 {
+      opacity: 0.8;
+      z-index: 2;
+    }
+    .blob-3 {
+      z-index: 4;
+    }
+  }
+
+  .simple-svg {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      width: 40rem;
+      height: 15rem;
+      .shapes {
+        position: relative;
+        img {
+          position: absolute;
+          transform: translate(50px, -75px);
+        }
+      }
+      .meta-text {
+        // position: absolute;
+      }
+    }
+  }
+}
+
+.meta-icon {
+  position: absolute;
+  transform: translateY(-100px);
+}
+.meta-text {
+  transform: translate(50px, 25px);
+}
+
+.signature {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translateX(-450px);
+  position: absolute;
+  color: #151515;
+}
+
+.title-2 {
+  transform: translateX(-225px);
+}

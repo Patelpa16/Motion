@@ -1,7 +1,22 @@
-import {gsap} from "gsap";
+import { gsap } from "gsap";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { MotionPathHelper } from "gsap/MotionPathHelper";
+import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.from("#line-1",{duration:.7,x:-200,alpha:0});
-gsap.from("#line-2",{duration:.7,x:-200,alpha:0,delay:0.1});
-gsap.from("#portrait",{duration:1,x: +200,alpha:0});
+gsap.registerPlugin(
+  DrawSVGPlugin,
+  MorphSVGPlugin,
+  MotionPathPlugin,
+  MotionPathHelper,
+  GSDevTools
+);
 
-gsap.from("#resumebutton",{duration:.7,x: -200,alpha:0,delay:0.3});
+GSDevTools.create();
+
+function cakelogoAnimation() {
+
+var mainTl = gsap.timeline();
+
+mainTl.add(cakelogoAnimation());

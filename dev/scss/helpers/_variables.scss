@@ -18,16 +18,12 @@ $screen-xl-min: 1200px;
 // Large desktops
 $screen-xxl-min: 1440px;
 
-
 // SCSS Vars
 // $white: #fff;
-// $black: #000;
+// $white: #000;
 
 // CSS Vars
 :root {
-    --white: #fff;
-    --black: #000;
-    --white0: 225, 225, 225;
-    --black0: 0, 0, 0;
-    --lightblue: rgb(2, 149, 229);
+  --white: #fff;
+  --white: #000;
 }
