@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Found-Logo</title>
-  </head>
-
-  <body>
-    <section class="preloader">
-      <svg
+<svg
         id="cake_layer"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -458,7 +446,3 @@
           style="fill: none; stroke: #012060; stroke-width: 4px; opacity: 0"
         />
       </svg>
-    </section>
-    <script src="js/scripts-min.js"></script>
-  </body>
-</html>
