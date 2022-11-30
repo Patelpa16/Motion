@@ -80,190 +80,52 @@ function cakeAnimation(){
     gsap.set("#al_path",{ drawSVG: "0% 0%" });
     gsap.set("#a_group_outer",{ transformOrigin: "100% 100%", x: 150, y: 150 });
   
-    tl.to(
-        "#a_group_outer",
-        { duration: 0.8, y: -35, x: -35, rotate: 15, scale: 1, ease: "power1.inOut" },
-        "c_line_blue+=" + 2.5
-    )
-        .to(
-            "#a_group_outer",
-            { duration: 0.5, y: 0, x: 0, rotate: -5 },
-            "c_line_blue+=" + 3.3
-        )
-        .to(
-            "#a_group_outer",
-            { duration: 0.3, rotate: 0, ease: "power1.inOut" },
-            "c_line_blue+=" + 3.8
-        )
-    
-        .fromTo(
-            "#ao_line_blue",
-            { scale: 0, strokeWidth: 206 },
-            { duration: 1, scale: 1, strokeWidth: 103, ease: "power1.out" },
-            "c_line_blue+=" + 2.7
-        )
-    
-        .to(
-            "#a_group",
-            { duration: 0.4, rotate: 15, ease: "expo.out" },
-            "c_line_blue+=" + 2.7
-        )
-        .to(
-            "#a_group",
-            { duration: 0.6, rotate: -5, ease: "linear" },
-            "c_line_blue+=" + 3.1
-        )
-        .to(
-            "#a_group",
-            { duration: 0.4, rotate: 0, ease: "linear" },
-            "c_line_blue+=" + 3.7
-        )
-    
+    tl.to("#a_group_outer",{ duration: 0.8, y: -35, x: -35, rotate: 15, scale: 1, ease: "power1.inOut" },"c_line_blue+=" + 2.5)
+        .to("#a_group_outer",{ duration: 0.5, y: 0, x: 0, rotate: -5 },"c_line_blue+=" + 3.3)
+        .to("#a_group_outer",{ duration: 0.3, rotate: 0, ease: "power1.inOut" },"c_line_blue+=" + 3.8)
+        .fromTo("#ao_line_blue",{ scale: 0, strokeWidth: 206 },{ duration: 1, scale: 1, strokeWidth: 103, ease: "power1.out" },"c_line_blue+=" + 2.7)
+        .to("#a_group",{ duration: 0.4, rotate: 15, ease: "expo.out" },"c_line_blue+=" + 2.7)
+        .to("#a_group",{ duration: 0.6, rotate: -5, ease: "linear" },"c_line_blue+=" + 3.1)
+        .to("#a_group",{ duration: 0.4, rotate: 0, ease: "linear" },"c_line_blue+=" + 3.7)
         .set("#ao_outer_line", { drawSVG: "35% 50%" }, "c_line_blue+=" + 3)
-        .to(
-            "#ao_outer_line",
-            { duration: 0.5, drawSVG: "101% 101%", ease: "power1.out" },
-            "c_line_blue+=" + 3
-        )
-        .to(
-            "#al_path",
-            { duration: 0.8, drawSVG: "5% 100%", ease: "expo.inOut" },
-            "c_line_blue+=" + 2.9
-        )
-        .to(
-            "#al_group",
-            { duration: 0.8, y: 5, ease: "expo.inOut" },
-            "c_line_blue+=" + 2.7
-        )
-        .to(
-            "#al_group",
-            { duration: 0.8, y: 0, ease: "expo.inOut" },
-            "c_line_blue+=" + 3.4
-        )
-        .to(
-            "#al_outer_path",
-            { duration: 0.4, drawSVG: "30% 70%", ease: "linear" },
-            "c_line_blue+=" + 2.8
-        )
-        .to(
-            "#al_outer_path",
-            { duration: 0.4, drawSVG: "101% 101%", ease: "linear" },
-            "c_line_blue+=" + 3.4
-        );
-    // k animation
-    gsap.set(
-        "#k_group_outer",
-        { transformOrigin: "20% 60%", rotate: 15 }
-    );
-    gsap.set(
-        "#kbs_path1",
-        { transformOrigin: "0% 0%", rotate: 15 }
-    );
-    gsap.set(
-        "#ksl_path1",
-        { transformOrigin: "0% 100%", rotate: -15 }
-    );
-    gsap.set(
-        "#e_group_outer", {
-        transformOrigin: "80% 70%",
-        rotate: -35,
-        x: -20,
-        y: 150,
-        scale: 0
-    });
+        .to("#ao_outer_line",{ duration: 0.5, drawSVG: "101% 101%", ease: "power1.out" },"c_line_blue+=" + 3)
+        .to("#al_path",{ duration: 0.8, drawSVG: "5% 100%", ease: "expo.inOut" },"c_line_blue+=" + 2.9)
+        .to( "#al_group",{ duration: 0.8, y: 5, ease: "expo.inOut" },"c_line_blue+=" + 2.7)
+        .to("#al_group",{ duration: 0.8, y: 0, ease: "expo.inOut" },"c_line_blue+=" + 3.4)
+        .to("#al_outer_path",{ duration: 0.4, drawSVG: "30% 70%", ease: "linear" },"c_line_blue+=" + 2.8)
+        .to("#al_outer_path",{ duration: 0.4, drawSVG: "101% 101%", ease: "linear" },"c_line_blue+=" + 3.4);
+
+        // k animation
+    gsap.set("#k_group_outer",{ transformOrigin: "20% 60%", rotate: 15 });
+    gsap.set("#kbs_path1",{ transformOrigin: "0% 0%", rotate: 15 });
+    gsap.set("#ksl_path1",{ transformOrigin: "0% 100%", rotate: -15 });
+    gsap.set("#e_group_outer", {transformOrigin: "80% 70%",rotate: -35,x: -20,y: 150,scale: 0});
     
     tl.set("#kl_path1", { opacity: 1 }, "c_line_blue+=" + 2.8)
-        .to(
-            "#kl_path1",
-            { duration: 0.4, morphSVG: "#kl_path" },
-            "c_line_blue+=" + 2.8
-        )
+        .to("#kl_path1",{ duration: 0.4, morphSVG: "#kl_path" },"c_line_blue+=" + 2.8)
         .set("#ksl_path1", { opacity: 1 }, "c_line_blue+=" + 3)
-        .to(
-            "#ksl_path1",
-            { duration: 0.6, morphSVG: "#ksl_path", rotate: 0 },
-            "c_line_blue+=" + 3
-        )
-        .set(
-            "#kbs_path1",
-            { opacity: 1 },
-            "c_line_blue+=" + 3.2)
-        .to(
-            "#kbs_path1",
-            { duration: 0.8, morphSVG: "#kbs_path", rotate: 0 },
-            "c_line_blue+=" + 3.2
-        )
-        .to(
-            "#k_group_outer",
-            { duration: 0.6, rotate: -3 },
-            "c_line_blue+=" + 2.8)
-        .to(
-            "#k_group_outer",
-            { duration: 0.2, y: 50 },
-            "c_line_blue+=" + 3.54)
-        .to(
-            "#k_group_outer",
-            { duration: 0.5, y: 0, rotate: 0 },
-            "c_line_blue+=" + 3.87
-        );
+        .to("#ksl_path1",{ duration: 0.6, morphSVG: "#ksl_path", rotate: 0 },"c_line_blue+=" + 3)
+        .set("#kbs_path1",{ opacity: 1 },"c_line_blue+=" + 3.2)
+        .to("#kbs_path1",{ duration: 0.8, morphSVG: "#kbs_path", rotate: 0 },"c_line_blue+=" + 3.2)
+        .to("#k_group_outer",{ duration: 0.6, rotate: -3 },"c_line_blue+=" + 2.8)
+        .to("#k_group_outer",{ duration: 0.2, y: 50 },"c_line_blue+=" + 3.54)
+        .to("#k_group_outer",{ duration: 0.5, y: 0, rotate: 0 },"c_line_blue+=" + 3.87);
+
+        
+     // e animation
+    gsap.set("#el_group",{ transformOrigin: "50% 50%", rotate: 120 });
+    gsap.set("#e_outer_path",{ drawSVG: "101% 101%" });
     
-    gsap.set(
-        "#el_group",
-        { transformOrigin: "50% 50%", rotate: 120 }
-    );
-    gsap.set(
-        "#e_outer_path",
-        { drawSVG: "101% 101%" }
-    );
-    
-    tl.to(
-        "#e_group_outer",
-        { duration: 0.8, y: -25, x: -5, rotate: 20, scale: 1, ease: "power1.inOut" },
-        "c_line_blue+=" + 2.5
-    )
-        .to(
-            "#e_group_outer",
-            { duration: 0.5, y: 0, x: 0, rotate: -5 },
-            "c_line_blue+=" + 3.3
-        )
-        .to(
-            "#e_group_outer",
-            { duration: 0.3, rotate: 0, ease: "power1.inOut" },
-            "c_line_blue+=" + 3.8
-        )
-        .to(
-            "#el_group",
-            { duration: 0.8, rotate: 2 },
-            "c_line_blue+=" + 3)
-        .to(
-            "#eo_path1",
-            { duration: 0.5, morphSVG: "#eo_path" },
-            "c_line_blue+=" + 3.2
-        )
-        .to(
-            "#el_path1",
-            { duration: 0.5, morphSVG: "#el_path2" },
-            "c_line_blue+=" + 3.2
-        )
-        .to(
-            "#el_path1",
-            { duration: 0.2, morphSVG: "#el_path" },
-            "c_line_blue+=" + 3.7
-        )
-        .to(
-            "#e_outer_path",
-            { duration: 0.4, drawSVG: "30% 70%", ease: "linear" },
-            "c_line_blue+=" + 3
-        )
-        .to(
-            "#e_outer_path",
-            { duration: 0.4, drawSVG: "0% 0%", ease: "linear" },
-            "c_line_blue+=" + 3.4
-        )
-        .to(
-            "#cake_layer",
-            { duration: 0.8, opacity: 0 },
-            "c_line_blue+=" + 4.8);
+    tl.to("#e_group_outer",{ duration: 0.8, y: -25, x: -5, rotate: 20, scale: 1, ease: "power1.inOut" },"c_line_blue+=" + 2.5)
+        .to("#e_group_outer",{ duration: 0.5, y: 0, x: 0, rotate: -5 },"c_line_blue+=" + 3.3)
+        .to("#e_group_outer",{ duration: 0.3, rotate: 0, ease: "power1.inOut" },"c_line_blue+=" + 3.8)
+        .to( "#el_group",{ duration: 0.8, rotate: 2 },"c_line_blue+=" + 3)
+        .to("#eo_path1",{ duration: 0.5, morphSVG: "#eo_path" },"c_line_blue+=" + 3.2)
+        .to("#el_path1",{ duration: 0.5, morphSVG: "#el_path2" },"c_line_blue+=" + 3.2)
+        .to("#el_path1",{ duration: 0.2, morphSVG: "#el_path" },"c_line_blue+=" + 3.7)
+        .to("#e_outer_path",{ duration: 0.4, drawSVG: "30% 70%", ease: "linear" },"c_line_blue+=" + 3)
+        .to("#e_outer_path",{ duration: 0.4, drawSVG: "0% 0%", ease: "linear" },"c_line_blue+=" + 3.4)
+        .to("#cake_layer",{ duration: 0.8, opacity: 0 },"c_line_blue+=" + 4.8);
         
         }
     
