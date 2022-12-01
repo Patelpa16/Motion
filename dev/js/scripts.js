@@ -26,12 +26,10 @@ gsap.registerPlugin(
   gsap.set("#al_outer_path,#ao_outer_line", { drawSVG: "0% 0%" });
   gsap.set("#al_path", { drawSVG: "0% 0%" });
   gsap.set("#a_group_outer", { transformOrigin: "100% 100%", x: 150, y: 150 });
-  
   gsap.set("#k_group_outer", { transformOrigin: "20% 60%", rotate: 15 });
   gsap.set("#kbs_path1", { transformOrigin: "0% 0%", rotate: 15 });
   gsap.set("#ksl_path1", { transformOrigin: "0% 100%", rotate: -15 });
   gsap.set("#e_group_outer", { transformOrigin: "80% 70%", rotate: -35, x: -20, y: 150, scale: 0 });
-  
   gsap.set("#el_group", { transformOrigin: "50% 50%", rotate: 120 });
   gsap.set("#e_outer_path", { drawSVG: "101% 101%" });
   
