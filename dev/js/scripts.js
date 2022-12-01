@@ -5,13 +5,8 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { MotionPathHelper } from "gsap/MotionPathHelper";
 import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(
-  DrawSVGPlugin, 
-  MorphSVGPlugin, 
-  MotionPathPlugin, 
-  MotionPathHelper, 
-  GSDevTools
-  );
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, MotionPathPlugin, MotionPathHelper, GSDevTools);
+
   gsap.set("#kh_blue_line,#kh_pink_line,#kh_yellow_line", { drawSVG: "0% 0%" });
   gsap.set("#c_outer_line_blue,#c_outer_line_pink,#c_outer_line_yellow", { drawSVG: "0% 0%" });
   gsap.set("#c_outer_path,#c_line_stroke", { drawSVG: "0% 0%" });
@@ -42,7 +37,6 @@ gsap.registerPlugin(
           .to("#c_line_pink_p", { duration: 1.05, rotate: 445 - 240, ease: "power2.inOut" }, "c_line_blue")
           .to("#c_line_blue,#c_line_pink,#c_line_yellow", { duration: 0.5, drawSVG: "0% 60.66%", ease: "power2.inOut" }, "c_line_blue")
           .to("#c_line_blue,#c_line_pink,#c_line_yellow", { duration: 0.55, drawSVG: "33.33% 66.66%", ease: "power2.inOut" }, "-=0.6")
-  
           .fromTo("#c_group", { scale: 0.5 }, { duration: 0.6, scale: 1.2, ease: "power1.inOut" }, "c_line_blue")
           .to("#c_group", { duration: 0.72, scale: 1, ease: "power1.inOut" }, "-=0.5")
           .set("#kh_path4", { opacity: 1 }, "c_line_blue+=" + 0)
@@ -52,17 +46,13 @@ gsap.registerPlugin(
           .to("#c_group", { duration: 0.5, scale: 1.2, ease: "power1.inOut" }, "c_line_blue+=" + 1.1)
           .fromTo("#c_line_white_g", { scale: 0 }, { duration: 1, scale: 1.5, ease: "power1.in" }, "c_line_blue+=" + 1.1)
           .fromTo("#c_line_white", { strokeWidth: 150 }, { duration: 1, strokeWidth: 53, ease: "power1.in" }, "c_line_blue+=" + 1.1)
-  
           .to("#kh_path4", { duration: 1, morphSVG: "#kh_path", ease: "power1.in" }, "c_line_blue+=" + 1.6)
           .to("#c_group", { duration: 0.5, scale: 1, ease: "power1.inOut" }, "c_line_blue+=" + 1.6)
           .to("#c_line_blue,#c_line_pink,#c_line_yellow", { duration: 1.8, strokeWidth: 103, ease: "power1.inOut" }, "c_line_blue+=" + 1.6)
-  
           .to("#c_outer_line_blue,#c_outer_line_pink,#c_outer_line_yellow", { drawSVG: "20% 80%", duration: 0.3, ease: "power1.in" }, "c_line_blue+=" + 1.4)
           .to("#c_outer_line_blue,#c_outer_line_pink,#c_outer_line_yellow", { drawSVG: "101% 101%", duration: 0.3, ease: "power1.out" }, "c_line_blue+=" + 1.7)
-  
           .to("#kh_blue_line,#kh_pink_line,#kh_yellow_line", { drawSVG: "30% 70%", duration: 0.3, ease: "power1.in" }, "c_line_blue+=" + 1.7)
           .to("#kh_blue_line,#kh_pink_line,#kh_yellow_line", { drawSVG: "101% 101%", duration: 0.3, ease: "power1.out" }, "c_line_blue+=" + 2)
-  
           .to("#c_line_blue", { duration: 1.2, drawSVG: "30% 100%", ease: "power2.inOut" }, "c_line_blue+=" + 2.1)
           .to("#c_line_yellow", { duration: 1.2, drawSVG: "30% 30%", ease: "power2.inOut" }, "c_line_blue+=" + 2.1)
           .to("#c_line_blue_p", { duration: 1.2, rotation: 565, ease: "power2.inOut" }, "c_line_blue+=" + 2.1)
@@ -81,7 +71,6 @@ gsap.registerPlugin(
           .to("#c_group_outer", { duration: 1.5, ease: "power2.inOut", motionPath: { path: "#c_group_road", align: "#c_group_road", alignOrigin: [0.5, 0.5], end: 1 } }, "c_line_blue+=" + 1.9)
           .to("#c_group", { duration: 0.9, rotate: -30, ease: "power2.inOut" }, "c_line_blue+=" + 1.8)
           .to("#c_group", { duration: 1.1, rotate: 0, ease: "power1.Out" }, "c_line_blue+=" + 2.8)
-  
           .to("#c_line_stroke", { drawSVG: "30% 60%", duration: 0.7, ease: "power1.in" }, "c_line_blue+=" + 2.8)
           .to("#c_line_stroke", { drawSVG: "90% 90%", duration: 0.5, ease: "power1.out" }, "c_line_blue+=" + 3.5)
           .set("#c_line_stroke", { opacity: 0 })
