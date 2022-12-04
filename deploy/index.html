@@ -1,34 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/0d5e1c8c45.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Prem Patel - Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Starting Template</title>
+  </head>
 
-<body>
-    <div id="hero">
-        <div id="overlay">
-            <section>
-                <h1 id="line-1">Hi, I am Prem Patel</h1>
-                <h1 id="line-2"> & this is my Design Portfolio</h1>
-    
-    
-                <button id='resumebutton'>Download Resume<i class="fa-solid fa-download"
-                        style="padding-left:10px"></i></i></button>
-            </section>
-            <div id="portrait" style=" height: 350px; width: 350px;
-            ">
-            </div>
-        </div>
-    </div>
+  <body>
+    <section class="preloader">
+      <div class="title">Cake logo animation</div>
+      <svg
+        id="cake_layer"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1600 1200"
+      >
+        <style>
+          #logo_f,
+          #kh_group_road,
+          #c_group_road {
+            opacity: 0;
+          }
+          #kh_path1,
+          #kh_path2,
+          #kh_path3,
+          #kh_path4,
+          #kh_path,
+          #kl_path,
+          #kbs_path,
+          #ksl_path,
+          #kl_path1,
+          #kbs_path1,
+          #ksl_path1 {
+            opacity: 0;
+          }
+          #c_line_white1,
+          #el_path,
+          #el_path2,
+          #eo_path {
+            opacity: 0;
+          }
+        </style>
+        <defs>
+          <mask
+            id="mask"
+            x="376.06"
+            y="327.89"
+            width="593.81"
+            height="593.81"
+            maskUnits="userSpaceOnUse"
+          >
+            <circle cx="672.96" cy="624.79" r="296.9" />
+            <circle cx="672.96" cy="624.79" r="110.49" style="fill: #fff" />
+          </mask>
+          <mask
+            id="mask-2"
+            x="665.25"
+            y="453.5"
+            width="213.92"
+            height="323.29"
+            maskUnits="userSpaceOnUse"
+          >
+            <rect x="665.25" y="453.5" width="213.92" height="323.29" />
+            <path
+              d="M797.73,735.83H758.05c-14.62-.54-25-12-25-25l7-171.36v-37.9h44V683.83h13.68Z"
+              style="fill: #fff"
+            />
+          </mask>
+          <mask
+            id="mask-3"
+            x="177.06"
+            y="327.89"
+            width="593.81"
+            height="593.81"
+            maskUnits="userSpaceOnUse"
+          >
+            <circle cx="473.96" cy="624.79" r="296.9" />
+            <circle cx="473.96" cy="624.79" r="110.49" style="fill: #fff" />
+          </mask>
+        </defs>
+        <title>vector</title>
+        <g id="a_group_outer">
+          <g id="a_group">
+            <g id="ao_group">
+              <g style="mask: url(#mask)">
+                <path
+                  id="ao_line_blue"
+                  d="M751.09,703.93a110.5,110.5,0,1,1,0-156.27A110.49,110.49,0,0,1,751.09,703.93Z"
+                  style="
+                    fill: none;
+                    stroke: #512dc8;
+                    stroke-miterlimit: 10;
+                    stroke-width: 103px;
+                  "
+                />
+              </g>
+              <path
+                id="ao_outer_line"
+                d="M705.81,747.5A127,127,0,1,1,727.42,510"
+                style="
+                  fill: none;
+                  stroke: #512dc8;
+                  stroke-linecap: round;
+                  stroke-miterlimit: 10;
+                  stroke-width: 6px;
+                "
+              />
+            </g>
+            <g id="al_group">
+              <g style="mask: url(#mask-2)">
+                <path
+                  id="al_path"
+                  d="M784.05,501.57V670.15a13.68,13.68,0,0,0,13.68,13.68h0"
+                  style="
+                    fill: none;
+                    stroke: #512dc8;
+                    stroke-linejoin: round;
+                    stroke-width: 140px;
+                  "
+                />
+              </g>
+            </g>
+          </g>
+          <path
+            id="al_outer_path"
+            d="M815.38,501.57V735.83"
+            style="
+              fill: none;
+              stroke: #512dc8;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+            "
+          />
+          <rect
+            x="537.73"
+            y="480.43"
+            width="283.88"
+            height="292.15"
+            style="
+              fill: none;
+              stroke: #512dc8;
+              stroke-miterlimit: 10;
+              opacity: 0;
+            "
+          />
+        </g>
+        <g id="e_group_outer">
+          <g id="e_group">
+            <path
+              id="eo_path"
+              d="M1236.51,626.49a110.5,110.5,0,1,0-219.43,18.58H1235A110.49,110.49,0,0,0,1236.51,626.49Zm-158.39-33.37a58.39,58.39,0,0,1,95.8,0Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="eo_path1"
+              d="M1236.51,626.49C1236.5027681741244,584.7849924663276,1213.0155696600946,546.6368327773598,1175.7804561397788,527.85242363541,1138.545342619463,509.0680144934601,1093.9063017038163,512.8477774256605,1060.3597689281619,537.6255465830101,1026.8132361525074,562.4033157403595,1010.0747517206671,603.9575420069798,1017.0799999999999,645.07,1089.72,645.07,1162.36,645.07,1235,645.07,1236.0258198376691,638.930259809464,1236.5309504669012,632.7148114047395,1236.51,626.49M1126.101,600.217C1126.101,600.217,1126.101,600.217,1126.101,600.217"
+              style="fill: #512dc8"
+            />
+            <g id="el_group">
+              <circle
+                cx="1126.02"
+                cy="626.5"
+                r="133.51"
+                style="fill: none; stroke: #fff; stroke-miterlimit: 10"
+              />
+              <path
+                id="el_path"
+                d="M1017.08,645.07a110.52,110.52,0,0,0,211.35,23H1167a58.38,58.38,0,0,1-96.36-23Z"
+                style="fill: #512dc8"
+              />
+              <path
+                id="el_path1"
+                d="M1017.08,645.07a110.51,110.51,0,0,0,183.66,62.83C1191.92,698.19,1167,668,1167,668a58.38,58.38,0,0,1-96.36-23Z"
+                style="fill: #512dc8"
+              />
+              <path
+                id="el_path2"
+                d="M1017.08,645.07A110.61,110.61,0,0,0,1126,737c49,1.44,95.77-36,106.8-82.18L1167,668a58.38,58.38,0,0,1-96.36-23Z"
+                style="fill: #512dc8"
+              />
+            </g>
+            <path
+              id="e_outer_path"
+              d="M1248.53,657.13a126.28,126.28,0,0,1-248.28-19.48s-3.56-37.65,10.56-65.09"
+              style="
+                fill: none;
+                stroke: #512dc8;
+                stroke-linecap: round;
+                stroke-miterlimit: 10;
+                stroke-width: 6px;
+              "
+            />
+          </g>
+        </g>
+        <g id="k_group_outer">
+          <g id="k_group">
+            <rect
+              x="822.23"
+              y="440.47"
+              width="224.69"
+              height="311.3"
+              style="
+                fill: none;
+                stroke: #512dc8;
+                stroke-miterlimit: 10;
+                stroke-width: 0.5px;
+                opacity: 0;
+              "
+            />
+            <path
+              id="kl_path"
+              d="M832.15,735.83V514.3L886,452.83V735.29Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="kl_path1"
+              d="M832.15,597v1H886v-.55Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="kbs_path"
+              d="M935.08,606l91.27,129.81H957.07l-61.29-90.76Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="kbs_path1"
+              d="M935.08,606l2.09,3-38.74,40-2.65-3.93Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="ksl_path"
+              d="M843.87,664.94,969.74,516.26h67.59L881.76,695.78Z"
+              style="fill: #512dc8"
+            />
+            <path
+              id="ksl_path1"
+              d="M843.87,664.94,883,618.7l1.55,73.24-2.8,3.84Z"
+              style="fill: #512dc8"
+            />
+          </g>
+        </g>
+        <g id="c_group_outer">
+          <g id="c_group">
+            <g style="mask: url(#mask-3)">
+              <g id="cmmg">
+                <g id="cmg">
+                  <g id="c_line_pink_p">
+                    <path
+                      id="c_line_pink"
+                      d="M552.09,702.93a110.5,110.5,0,1,1,0-156.27A110.49,110.49,0,0,1,552.09,702.93Z"
+                      style="
+                        fill: none;
+                        stroke: #fc3790;
+                        stroke-miterlimit: 10;
+                        stroke-width: 103px;
+                      "
+                    />
+                  </g>
+                  <g id="c_line_yellow_p">
+                    <path
+                      id="c_line_yellow"
+                      d="M552.09,702.93a110.5,110.5,0,1,1,0-156.27A110.49,110.49,0,0,1,552.09,702.93Z"
+                      style="
+                        fill: none;
+                        stroke: #faa92b;
+                        stroke-miterlimit: 10;
+                        stroke-width: 103px;
+                      "
+                    />
+                  </g>
+                  <g id="c_line_blue_p">
+                    <path
+                      id="c_line_blue"
+                      d="M552.09,702.93a110.5,110.5,0,1,1,0-156.27A110.49,110.49,0,0,1,552.09,702.93Z"
+                      style="
+                        fill: none;
+                        stroke: #512dc8;
+                        stroke-miterlimit: 10;
+                        stroke-width: 103px;
+                      "
+                    />
+                  </g>
+                  <g id="c_line_white_g">
+                    <path
+                      id="c_line_white"
+                      d="M552.09,702.93a110.5,110.5,0,1,1,0-156.27A110.49,110.49,0,0,1,552.09,702.93Z"
+                      style="
+                        fill: none;
+                        stroke: #fff;
+                        stroke-miterlimit: 10;
+                        stroke-width: 103px;
+                        opacity: 0.25;
+                      "
+                    />
+                  </g>
+                  <path
+                    id="c_line_stroke"
+                    d="M492.21,669.74a48.5,48.5,0,1,1,16-79.24"
+                    style="
+                      fill: none;
+                      stroke: #512dc8;
+                      stroke-linecap: round;
+                      stroke-miterlimit: 10;
+                      stroke-width: 6px;
+                    "
+                  />
+                </g>
+              </g>
+            </g>
+          </g>
+          <path
+            id="c_outer_path"
+            d="M565.64,716.47a129.65,129.65,0,1,1,0-183.35A129.65,129.65,0,0,1,565.64,716.47Z"
+            style="
+              fill: none;
+              stroke: #512dc8;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+            "
+          />
+          <path
+            d="M495.88,923.09c-164.74,12.11-308.1-111.63-320.2-276.37S287.31,338.63,452,326.52s308.1,111.63,320.21,276.37S660.62,911,495.88,923.09Z"
+            style="
+              fill: none;
+              stroke: #512dc8;
+              stroke-miterlimit: 10;
+              stroke-width: 5px;
+              opacity: 0;
+            "
+          />
+          <path
+            id="c_outer_line_yellow"
+            d="M618.9,652.45l93.6,17.85"
+            style="
+              fill: none;
+              stroke: #faa92b;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+            "
+          />
+          <path
+            id="c_outer_line_pink"
+            d="M425.43,485.46l-31.34-90"
+            style="
+              fill: none;
+              stroke: #fc3790;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+            "
+          />
+          <path
+            id="c_outer_line_blue"
+            d="M377.55,736.51,315.3,808.64"
+            style="
+              fill: none;
+              stroke: #512dc8;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+              stroke-width: 6px;
+            "
+          />
+        </g>
+        <g id="kh_group_outer">
+          <g id="kh_group">
+            <g id="kh_path">
+              <path
+                d="M860.93,447v34.86l-53.82,61.47V447.53Z"
+                style="fill: #fc3790"
+              />
+            </g>
+            <path
+              id="kh_path4"
+              d="M813.11,505.31l-6,38,6-38.25,3-20.75Z"
+              style="fill: #fc3790"
+            />
+            <path
+              id="kh_path3"
+              d="M836.11,445.31l-29,98v-83l28-70Z"
+              style="fill: #fc3790"
+            />
+            <path
+              id="kh_path2"
+              d="M875.11,453.31l-68,90V332.81l69-.5Z"
+              style="fill: #fc3790"
+            />
+            <path
+              id="kh_path1"
+              d="M875.11,465.31l-68,78V388.81l69-.5Z"
+              style="fill: #fc3790"
+            />
+          </g>
+        </g>
+        <path
+          id="kh_group_road"
+          d="M802,398l-6-40,4,240s87.14-82.39,134-148c30-42,52-81.73,54-104,3-34-22.45-69.23-66-64-25,3-54.38,23.51-70,51-25,44-51,265-51,265l9-64v10"
+          style="
+            fill: none;
+            stroke: #512dc8;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 6px;
+          "
+        />
+        <path
+          id="kh_yellow_line"
+          d="M884,452l14-156"
+          style="
+            fill: none;
+            stroke: #faa92b;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 6px;
+          "
+        />
+        <path
+          id="kh_pink_line"
+          d="M926,450l110-94"
+          style="
+            fill: none;
+            stroke: #fc3790;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 6px;
+          "
+        />
+        <path
+          id="kh_blue_line"
+          d="M900,540l156-38"
+          style="
+            fill: none;
+            stroke: #512dc8;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 6px;
+          "
+        />
+        <path
+          id="c_group_road"
+          d="M800,598c-.31,0-43,15.33-53.38,28-61.49,75.5-127.72,150.44-238.37,100.71C454.26,702.45,474,624.81,474,624.81"
+          style="
+            fill: none;
+            stroke: #512dc8;
+            stroke-linecap: round;
+            stroke-miterlimit: 10;
+            stroke-width: 6px;
+            opacity: 0;
+          "
+        />
+        <path
+          id="a_group_road"
+          d="M911,749S795,706.2,743,613c-21-37.7-28.64-111.93-38.2-114.35-9.87-2.5-16.6,36-18.85,50-5.19,32-7,80.38-7,80.38"
+          style="fill: none; stroke: #012060; stroke-width: 4px; opacity: 0"
+        />
+      </svg>
+    </section>
     <script src="js/scripts-min.js"></script>
-</body>
-
+  </body>
 </html>

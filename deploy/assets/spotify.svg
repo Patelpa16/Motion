@@ -1,0 +1,103 @@
+<svg id="spotify_layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 288 216">
+        <defs>
+            <mask id="mask" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_s"
+                    d="M139.94,99.84s-3.67-3.57-7.43-3.1-5.64,2.37-6,3.77a4.68,4.68,0,0,0,3.39,6c4,1.28,7.05,2.66,7.9,5.07s-.86,4.77-3.11,5.9c-2.06,1-5.92,1.78-10.81-2.54"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-2" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_p_l" d="M147.37,129.09V102.45"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+                <path id="spotify_p_o" d="M161.2,111.63a7.06,7.06,0,1,1-7-7A7.06,7.06,0,0,1,161.2,111.63Z"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-3" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_o" d="M183.14,111.63a7.06,7.06,0,1,1-7.06-7A7.06,7.06,0,0,1,183.14,111.63Z"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-4" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_t_h" d="M186.81,105h14.56"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+                <path id="spotify_t_lw" d="M202.43,117.4s-3.76,1.24-5.63.9c-2.34-.42-3.46-1.7-3.46-3.61V97"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-5" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_i_l" d="M206.4,102.45v18.36"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-6" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_f_h" d="M210.83,105h14"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+                <path id="spotify_f_l" d="M217.63,120.81s-.1-20.21,0-22.55,2.66-3.5,4.68-3.5a13.27,13.27,0,0,1,4.09.79"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+            <mask id="mask-7" x="0" y="0" width="288" height="216" maskUnits="userSpaceOnUse">
+                <rect width="288" height="216" />
+                <path id="spotify_y_fs"
+                    d="M241.63,101.91s-7.14,19.43-8,21.78-2.21,3.65-5.69,3.16a33.22,33.22,0,0,1-5.9-1.26"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+                <path id="spotify_y_bs" d="M226,99.93l9.12,22"
+                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:7px" />
+            </mask>
+        </defs>
+        <title>sportfy</title>
+        <g id="spotify_circle_p_grp">
+            <path id="spotify_r_p" d="M127.74,85.9v44.2"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:7.04272627830505px" />
+            <path id="spotify_m_p" d="M144,74.73V130.1"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px" />
+            <path id="spotify_l_p" d="M160.26,85.9v44.2"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:7.04272627830505px" />
+            <path id="spotify_circle" d="M180.23,108A36.23,36.23,0,1,1,144,71.77,36.23,36.23,0,0,1,180.23,108Z"
+                style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px" />
+            <path id="spotify_t_l" d="M123.32,99.92a64.38,64.38,0,0,1,45.38,5"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5.25369515582838px" />
+            <path id="spotify_m_l" d="M127.15,111a54.39,54.39,0,0,1,36.15,4.62"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4.66995124962523px" />
+            <path id="spotify_b_l" d="M126.38,121.78a38,38,0,0,1,32.69,2.69"
+                style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3.50246343721892px" />
+        </g>
+        <g style="mask:url(#mask)">
+            <path
+                d="M137,101.12a4,4,0,0,0-1.85-1.28,6.8,6.8,0,0,0-2.22-.41,6.14,6.14,0,0,0-1.25.14,5,5,0,0,0-1.23.45,3,3,0,0,0-.94.81,2.07,2.07,0,0,0-.35,1.23,2,2,0,0,0,.86,1.76,8,8,0,0,0,2.18,1.05c.87.28,1.81.57,2.82.86A12.1,12.1,0,0,1,137.8,107a6.81,6.81,0,0,1,2.18,2.13,6.51,6.51,0,0,1,.86,3.56,8.18,8.18,0,0,1-.79,3.71,7.55,7.55,0,0,1-2.14,2.63,9.36,9.36,0,0,1-3.13,1.55,14.07,14.07,0,0,1-3.77.5,13.55,13.55,0,0,1-4.61-.76,11.41,11.41,0,0,1-4-2.44l4-4.4a5.84,5.84,0,0,0,2.18,1.79,6.19,6.19,0,0,0,2.72.63,6.06,6.06,0,0,0,1.38-.17,4.13,4.13,0,0,0,1.26-.48,2.76,2.76,0,0,0,.9-.83,2,2,0,0,0,.34-1.19,2.17,2.17,0,0,0-.88-1.82,8.15,8.15,0,0,0-2.21-1.13c-.89-.31-1.85-.62-2.88-.94a12.83,12.83,0,0,1-2.88-1.26,6.89,6.89,0,0,1-2.22-2.08,6.06,6.06,0,0,1-.88-3.42,7.65,7.65,0,0,1,.81-3.6,7.8,7.8,0,0,1,2.16-2.6,9.52,9.52,0,0,1,3.12-1.56,12.59,12.59,0,0,1,3.63-.52,14.28,14.28,0,0,1,4.18.61,9.66,9.66,0,0,1,3.63,2Z"
+                style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-2)">
+            <path
+                d="M144.84,102.89h5v2.3h.08a5.45,5.45,0,0,1,.84-1,6.48,6.48,0,0,1,1.23-.89,7,7,0,0,1,1.53-.64,6,6,0,0,1,1.76-.26,9.1,9.1,0,0,1,3.53.67,8.11,8.11,0,0,1,2.72,1.87,8.55,8.55,0,0,1,1.74,2.86,10.42,10.42,0,0,1,.61,3.64,11.11,11.11,0,0,1-.55,3.51,9.62,9.62,0,0,1-1.59,3,7.83,7.83,0,0,1-2.5,2.07,7,7,0,0,1-3.35.77,9.21,9.21,0,0,1-3.15-.52,5,5,0,0,1-2.39-1.78h-.07v10.08h-5.4Zm5,8.74a4.52,4.52,0,0,0,1.14,3.21,4.77,4.77,0,0,0,6.37,0,5.11,5.11,0,0,0,0-6.41,4.77,4.77,0,0,0-6.37,0A4.53,4.53,0,0,0,149.8,111.63Z"
+                style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-3)">
+            <path
+                d="M166.36,111.63a9.25,9.25,0,0,1,.76-3.78,8.6,8.6,0,0,1,2.07-2.89,9.07,9.07,0,0,1,3.1-1.86,11.4,11.4,0,0,1,7.59,0A9.07,9.07,0,0,1,183,105a8.88,8.88,0,0,1,2.07,2.89,9.93,9.93,0,0,1,0,7.57,8.88,8.88,0,0,1-2.07,2.89,9.22,9.22,0,0,1-3.1,1.86,11.57,11.57,0,0,1-7.59,0,9.22,9.22,0,0,1-3.1-1.86,8.6,8.6,0,0,1-2.07-2.89A9.26,9.26,0,0,1,166.36,111.63Zm5.4,0a4.52,4.52,0,0,0,1.14,3.21,4.77,4.77,0,0,0,6.37,0,5.11,5.11,0,0,0,0-6.41,4.77,4.77,0,0,0-6.37,0A4.53,4.53,0,0,0,171.76,111.63Z"
+                style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-4)">
+            <path
+                d="M200.89,107.21h-4.76V113a10.35,10.35,0,0,0,.08,1.31,2.66,2.66,0,0,0,.32,1,1.6,1.6,0,0,0,.78.66,3.32,3.32,0,0,0,1.38.24,9.42,9.42,0,0,0,1.14-.09,1.91,1.91,0,0,0,1.06-.42v4.5a8.49,8.49,0,0,1-1.87.44,17.85,17.85,0,0,1-1.91.1,10.51,10.51,0,0,1-2.52-.28,5.93,5.93,0,0,1-2-.92,4.34,4.34,0,0,1-1.35-1.64,5.66,5.66,0,0,1-.48-2.45v-8.31h-3.46v-4.32h3.46V97.7h5.39v5.19h4.76Z"
+                style="fill:#23da69" />
+        </g>
+        <g id="spotify_i_o">
+            <path d="M203.26,97.38a3.14,3.14,0,1,1,.92,2.21A3,3,0,0,1,203.26,97.38Z" style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-5)">
+            <rect x="203.7" y="102.89" width="5.4" height="17.5" style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-6)">
+            <path
+                d="M214.86,107.21h-3.57v-4.32h3.57v-3.1a13.89,13.89,0,0,1,.25-2.72,5.57,5.57,0,0,1,1-2.25,4.81,4.81,0,0,1,2.07-1.53,9.46,9.46,0,0,1,3.55-.56c.55,0,1.09,0,1.62.08a9.89,9.89,0,0,1,1.54.25l-.25,4.57a6.4,6.4,0,0,0-.86-.27,4.16,4.16,0,0,0-.9-.09,2.93,2.93,0,0,0-1.95.56,3,3,0,0,0-.64,2.28v2.78h4v4.32h-4v13.17h-5.4Z"
+                style="fill:#23da69" />
+        </g>
+        <g style="mask:url(#mask-7)">
+            <path
+                d="M236.38,123.23c-.36.93-.71,1.76-1,2.48a6,6,0,0,1-1.28,1.82,5,5,0,0,1-2,1.11A10.34,10.34,0,0,1,229,129a12.38,12.38,0,0,1-4-.65l.71-4.42a6.21,6.21,0,0,0,2.52.54,4.68,4.68,0,0,0,1.48-.2,2.5,2.5,0,0,0,1-.58,3,3,0,0,0,.62-.92c.17-.36.35-.78.55-1.26l.39-1-7.67-17.64h5.83l4.5,11.55h.08l3.85-11.55h5.54Z"
+                style="fill:#23da69" />
+        </g>
+    </svg>
