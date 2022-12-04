@@ -1,11 +1,11 @@
-import { gsap } from "gsap";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
+// import { gsap } from "gsap";
+// import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+// import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(
-    DrawSVGPlugin,
-    GSDevTools
-);
+// gsap.registerPlugin(
+//     DrawSVGPlugin,
+//     GSDevTools
+// );
 gsap.set("#spotify_circle", { drawSVG: "50% 50%", rotate: 90,transformOrigin: "50% 50%" });
 gsap.set("#spotify_t_l", { x:-40,y:-10, opacity: 0 });
 gsap.set("#spotify_m_l", { x: 40 , opacity: 0});
@@ -96,4 +96,4 @@ mainTimeline.add(lineOneAnimation(),0)
 .add(circleGroup())
 .add(spotify())
 
-GSDevTools.create()
+// GSDevTools.create()
