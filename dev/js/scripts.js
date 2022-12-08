@@ -3,9 +3,11 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin,GSDevTools);
-
-
+gsap.registerPlugin(
+  DrawSVGPlugin, 
+  MorphSVGPlugin, 
+  GSDevTools
+  );
 gsap.set("#spotify_circle", { rotate: 180,transformOrigin: "50% 50%",opacity:0 });
 gsap.set("#spotify_t_l", { drawSVG: "100% 100%", opacity: 0 });
 gsap.set("#spotify_m_l", { drawSVG: "0% 0%", opacity: 0});
@@ -98,5 +100,6 @@ mainTimeline.add(lineOneAnimation(),0)
 .add(circleGroup())
 .add(spotify())
 
+mainTimeline.timeScale(1.3)
 
 GSDevTools.create()
